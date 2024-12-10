@@ -1,0 +1,49 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build and Run",
+            "type": "shell",
+            "command": "odin",
+            "args": [
+                "run",
+                ".",
+                "-out:game.exe"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Build Debug",
+            "type": "shell",
+            "command": "odin",
+            "args": [
+                "build",
+                ".",
+                "-out:game.exe"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": {
+                "kind": "build",
+            }
+        },
+        {
+            "label": "Build Release",
+            "type": "shell",
+            "command": "odin",
+            "args": [
+                "build",
+                ".",
+                "-out:game.exe",
+                "-subsystem:windows"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": {
+                "kind": "build",
+            }
+        }
+    ]
+}
