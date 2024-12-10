@@ -3,8 +3,8 @@ package main
 import rl "vendor:raylib"
 
 main :: proc() {
-	FONT_SIZE := i32(50)
-	TITLE := cstring("Raylib with Odin")
+	FONT_SIZE: i32 : 50
+	TITLE: cstring : "Raylib with Odin"
 
 	rl.InitWindow(800, 600, TITLE)
 	defer rl.CloseWindow()
